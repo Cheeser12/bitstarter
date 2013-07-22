@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>Bitstarter - Power to the People</title>
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -47,6 +47,8 @@
       /* Main body and headings */
       body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+        background-color: #3C9CF0;
+        color: #FFFFFF;
       }
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
@@ -90,7 +92,7 @@
         padding: 2.5% 0%;
       }
       .footer {
-        color: #cccccc;
+        color: #ffffff;
         text-align: center;
       }
       .footer p {
@@ -98,6 +100,20 @@
       }
       .footer a {
         color: #ccccff;
+      }
+
+      .faq {
+        background-color: #343434;
+      }
+      .faq h3 {
+        text-align: center;
+      }
+      .faq a {
+        color: #54A8F2;
+      }
+
+      .benefits-heading {
+        color: #B90E14;
       }
     </style>
   </head>
@@ -107,22 +123,22 @@
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-	<div class="container">
-	  <button type="button" class="btn btn-navbar"
-		  data-toggle="collapse" data-target=".nav-collapse">
-	  <span class="icon-bar"></span>
-   	  <span class="icon-bar"></span>
-	  <span class="icon-bar"></span>
-	  </button>
-	  <a class="brand" href="#">Bitstarter</a>
-	  <div class="nav-collapse collapse">
-	    <ul class="nav">
-	      <li class="active"><a href="#">Home</a></li>
-	      <li><a href="#about">About</a></li>
-	      <li><a href="#contact">Contact</a></li>
-	    </ul>
-	  </div> <!-- /.nav-collapse -->
-	</div>
+	     <div class="container">
+	       <button type="button" class="btn btn-navbar"
+		      data-toggle="collapse" data-target=".nav-collapse">
+	         <span class="icon-bar"></span>
+   	       <span class="icon-bar"></span>
+	         <span class="icon-bar"></span>
+	       </button>
+	       <a class="brand" href="#">Bitstarter</a>
+	       <div class="nav-collapse collapse">
+	         <ul class="nav">
+	           <li class="active"><a href="#">Home</a></li>
+	           <li><a href="#about">About</a></li>
+	           <li><a href="#contact">Contact</a></li>
+	         </ul>
+	       </div> <!-- /.nav-collapse -->
+	      </div>
       </div>
     </div>
 
@@ -132,66 +148,66 @@
       <!-- www.google.com/fonts/specimen/Ubuntu -->
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
-	<div class="span12">
-	  <h1>Product</h1>
-	</div>
+	      <div class="span12">
+	        <h1>Power to the People</h1>
+	      </div>
       </div>
       <div class="row-fluid subheading">
-	<div class="span12">
-	  <!-- Special typography from Bootstrap for lead paragraph -->
-	  <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-	  <p class="lead">One sentence description.</p>
-	</div>
+	      <div class="span12">
+	        <!-- Special typography from Bootstrap for lead paragraph -->
+	        <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+	        <p class="lead">A social platform for political candidates to campaign and connect with voters.</p>
+	      </div>
       </div>
       <div class="row-fluid pitch">
-	<div class="span5 offset1 video">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
+	      <div class="span5 offset1 video">
+	        <img class="img-polaroid" src="http://placehold.it/480x300">
+	      </div>
 	
-	<!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
-	<div class="span5 actions">
-	  <div class="span8 offset2">
-	    <div class="statistics">
-	      <div class="span4">
-		<!-- linediv-l and linediv-r give dividing lines that look
-		     different in horizontal and vertical layouts, illustrating
-		     media queries -->
-		<div class="linediv-l">
-		<h3>1000</h3> <p>backers</p>
-		</div>
+	      <!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
+	      <div class="span5 actions">
+	        <div class="span8 offset2">
+	          <div class="statistics">
+	            <div class="span4">
+		            <!-- linediv-l and linediv-r give dividing lines that look
+		                 different in horizontal and vertical layouts, illustrating
+		                 media queries -->
+		            <div class="linediv-l">
+		              <h3>1000</h3> <p>backers</p>
+		            </div>
+	            </div>
+	            <div class="span4">
+		            <div class="linediv-c">
+		              <h3>$6000</h3> <p>of $10000</p>
+		            </div>
+	            </div>
+	            <div class="span4">
+		            <div class="linediv-r">
+		              <h3>10</h3> <p>days left</p>
+		            </div>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="span10 offset1">
+	          <!-- Bootstrap progress bar -->
+	          <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+	          <div class="thermometer progress progress-striped">
+	            <div class="bar bar-info" style="width: 60%;"></div>
+	            <div class="bar bar-danger" style="width: 40%;"></div>
+	          </div>
+	        </div>
+	        <div class="span6 offset3 order">
+	          <!-- Standard Bootstrap button. -->
+	          <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+	            <button class="btn btn-success btn-large">Preorder</button>
+	        </div>
+	        <div class="span8 offset2 social">
+	          <!-- Social buttons are not included in default Bootstrap. -->
+	          <!-- See: http://noziwaves.github.io/bootstrap-social-buttons -->
+	          <button class="btn btn-twitter"><i class="icon-twitter"></i></button>
+	          <button class="btn btn-facebook"><i class="icon-facebook"></i></button>
+	        </div>
 	      </div>
-	      <div class="span4">
-		<div class="linediv-c">
-		<h3>$6000</h3> <p>of $10000</p>
-		</div>
-	      </div>
-	      <div class="span4">
-		<div class="linediv-r">
-		<h3>10</h3> <p>days left</p>
-		</div>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="span10 offset1">
-	    <!-- Bootstrap progress bar -->
-	    <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-	    <div class="thermometer progress active">
-	      <div class="bar bar-success" style="width: 60%;"></div>
-	      <div class="bar bar-warning" style="width: 40%;"></div>
-	    </div>
-	  </div>
-	  <div class="span6 offset3 order">
-	    <!-- Standard Bootstrap button. -->
-	    <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-	    <button class="btn btn-success btn-large">Preorder</button>
-	  </div>
-	  <div class="span8 offset2 social">
-	    <!-- Social buttons are not included in default Bootstrap. -->
-	    <!-- See: http://noziwaves.github.io/bootstrap-social-buttons -->
-	    <button class="btn btn-twitter"><i class="icon-twitter"></i></button>
-	    <button class="btn btn-facebook"><i class="icon-facebook"></i></button>
-	  </div>
-	</div>
       </div>
 
       <!-- Beyond this part the marketing copy begins -->
@@ -199,89 +215,79 @@
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
-	<div class="span5 offset1 asset">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
-	<div class="span5 copy">
-	  <p> 
-	    Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Vestibulum 
-	    egestas eros non erat convallis sollicitudin. Vivamus vehicula ac elit 
-	    laoreet vulputate. Nunc sed fermentum neque, venenatis feugiat tellus.
-	    Sed sodales mauris quis interdum interdum. Praesent at orci viverra
-	    lacus accumsan mattis. Donec ac lobortis nunc. Curabitur vestibulum
-	    mauris at vulputate hendrerit. Mauris semper risus non nunc euismod
-	    tincidunt. Fusce eget lorem porta, fermentum lacus quis, vulputate
-	    risus. Praesent semper nibh nec tincidunt pretium.
-	  </p>
-	</div>
+	      <div class="span5 offset1 asset">
+	        <img class="img-polaroid" src="http://placehold.it/480x300">
+	      </div>
+	      <div class="span5 copy">
+	        <p> 
+  	        <b>Power to the People</b> is a platform for political candidates to
+            share their ideas with their (possibly) future constituents and to compare
+            and contrast themselves with their fellow candidates. With your help, we can
+            change the future of political elections to be <i>citizen-centered</i>, allowing
+            the people to be informed of what candidates are running and what their
+            platforms are so they can make an informed decision in the voting booth.
+	        </p>
+	      </div>
       </div>
       
       <div class="row-fluid section2">
-	<div class="span5 offset1 copy copy-right">
-	  <p>
-	    Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Vestibulum 
-	    egestas eros non erat convallis sollicitudin. Vivamus vehicula ac elit 
-	    laoreet vulputate. Nunc sed fermentum neque, venenatis feugiat tellus.
-	    Sed sodales mauris quis interdum interdum. Praesent at orci viverra
-	    lacus accumsan mattis. Donec ac lobortis nunc. Curabitur vestibulum
-	    mauris at vulputate hendrerit. Mauris semper risus non nunc euismod
-	    tincidunt. Fusce eget lorem porta, fermentum lacus quis, vulputate
-	    risus. Praesent semper nibh nec tincidunt pretium.
-	  </p>
-	</div>
-	<div class="span5 asset">
-	  <img class="img-polaroid" src="http://placehold.it/480x300">
-	</div>
+	      <div class="span5 offset1 copy copy-right">
+	          <h2 class="benefits-heading"><u>Benefits for Candidates</u></h2>
+              <ul>
+                <li>A social platform to connect directly with voters</li>
+                <li>Provides social metrics to judge how your campaign is performing</li>
+                <li>A non-discriminatory area to share your ideas and campaign on equal footing:
+                    everyone pays the same rate, everyone has equal access to services</li>
+                <li>Clearly communicate your ideas to votes and contrast yourself to other candidates by providing
+                    answers to common political questions which will be shared on your main campaign page</li>
+                <li>Post videos and pictures from the campaign trail</li>
+                <li>Full integration with other social media sites (Facebook, Twitter, etc.)</li>
+              </ul>
+            <h2 class="benefits-heading"><u>Benefits for Citizens</u></h2>
+              <ul>
+                <li>An easy way to see which candidates are running in local, state, and national elections</li>
+                <li>Compare and contrast candidiates by viewing their answers on common political questions</li>
+                <li>Use your own profile to express your support for various candidates and share with friends and family</li>
+                <li>Full integration with other social media sites (Facebook, Twitter, etc.)</li>
+              </ul>
+	      </div>
+	      <div class="span5 asset">
+	        <img class="img-polaroid" src="http://placehold.it/480x300">
+	      </div>
       </div>
 
       <!-- For the FAQ, we introduce a little bit of JS, using the accordian -->
       <!-- This brings in jquery.js and bootstrp.js as dependencies -->
       <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
       <div class="row-fluid faq">
-	<div class="span10 offset1">
-	  <h3>FAQ</h3>
-	  <div class="accordian" id="accordian2">
-	    <div class="accordian-group">
-	      <div class="accordian-heading">
-		<a class="accordian-toggle" data-toggle="collapse"
-		   data-parent="#accordian2" href="#collapseOne">
-		  What does FAQ stand for?
-		</a>
+	      <div class="span10 offset1">
+	        <h3>FAQ</h3>
+	        <div class="accordion" id="accordion2">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                  Will <b>Power to the People</b> be available for elections outside the United States?
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  At this time, we have no plans to support elections in countries besides the United States. However, we have not ruled out this possibility.
+                </div>
+              </div>
+            </div>        
+          </div>   
 	      </div>
-	      <div id="collapseOne" class="accordion-body collapse">
-		<div class="accordion-inner">
-		  Frequently Asked Question.
-		</div>
-	      </div>
-	    </div>
-	    <div class="accordion-group">
-	      <div class="accordion-heading">
-		<a class="accordion-toggle" data-toggle="collapse"
-		   data-parent="#accordion2" href="#collapseTwo">
-		  What's a Frequently Asked Question?
-		</a>
-	      </div>
-	      <div id="collapseTwo" class="accordion-body collapse">
-		<div class="accordion-inner">
-		  A question which is commonly asked by users.
-		</div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-
       </div>
 
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
-	<div class="span12">
-	  <p>This work is licensed under
-	    the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-	      By-SA 3.0
-	    </a>, without all the cruft that would otherwise be put at the
-	    bottom of the page.</p>
-	</div>
+	      <div class="span12">
+	        <p>This work is licensed under
+	           the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+	           By-SA 3.0</a>, without all the cruft that would otherwise be put at the
+	           bottom of the page.</p>
+	      </div>
       </div>
     </div>
   </body>
